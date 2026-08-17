@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width:600px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media (min-width:0px) and (max-width:200px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media (min-width:600px) {
+            body {
+                background-image: url("https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL0FsbC1vZi10aGUtbWF0dGVyLWluLXRoZS1zYW1lLWxvY2F0aW9uLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODI4fSwidG9Gb3JtYXQiOiJhdmlmIn19");
+
+            }
+        }
+
+        .earth {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 10%;
+            left: 17%;
+            text-align: center;
+            overflow: auto;
+
+        }
+
+        .orbit {
+            width: 300px;
+            height: 300px;
+            border-radius: 60%;
+            border: 2px solid red;
+            position: relative;
+            padding-left: 150px;
+
+
+        }
+
+        .moon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 20%;
+            text-align: center;
+            overflow: auto;
+        }
+
+       
+
+        @keyframes {}
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="earth">EARTH</div>
+        <div class="orbit"></div>
+        <div class="moon">MOON</div>
+    </div>
+
+</body>
+
+</html>

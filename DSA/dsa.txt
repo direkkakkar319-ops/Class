@@ -1,0 +1,255 @@
+
+DSA QUICK CHEAT SHEET
+Time & Space Complexity + Important Points
+
+=================================================
+MODULE 1: DSA REFRESHER
+=================================================
+
+Arrays
+Access: O(1)
+Search: O(n)
+Insertion (end): O(1)
+Insertion (middle): O(n)
+Deletion: O(n)
+Space Complexity: O(n)
+
+Strings
+Access: O(1)
+Search substring: O(n)
+Insertion/Deletion: O(n)
+Space: O(n)
+
+Linked Lists
+Access: O(n)
+Search: O(n)
+Insertion at head: O(1)
+Insertion at tail: O(1) (if tail pointer) else O(n)
+Deletion: O(1) if node reference is known
+Space: O(n)
+
+Traversal
+Array Traversal: O(n)
+Linked List Traversal: O(n)
+
+Important Problem Techniques
+
+Sliding Window
+Time Complexity: O(n)
+Used when dealing with contiguous subarrays or substrings.
+
+Two Pointer Technique
+Time Complexity: O(n)
+Used in:
+- sorted arrays
+- pair sum problems
+- removing duplicates
+
+Prefix Sum
+Build prefix array: O(n)
+Range sum query: O(1)
+
+Example:
+sum(L,R) = prefix[R] - prefix[L-1]
+
+Complexity Notations
+
+Big-O → Worst case
+Example: O(n²)
+
+Omega (Ω) → Best case
+Example: Ω(1)
+
+Theta (Θ) → Tight bound / Average case
+Example: Θ(n log n)
+
+Important Reminders
+- Always analyze worst case unless specified
+- Drop constants in Big-O
+- Ignore lower order terms
+
+Example:
+3n² + 2n + 5 → O(n²)
+
+=================================================
+MODULE 2: RECURSION
+=================================================
+
+Key Concepts
+
+Base Case
+Condition where recursion stops.
+
+Recursive Case
+Function calling itself with smaller input.
+
+Call Stack
+Every recursive call gets a stack frame.
+
+Stack Overflow
+Occurs when recursion depth exceeds stack memory.
+
+Recursion vs Iteration
+
+Recursion
+- easier to write
+- uses call stack
+
+Iteration
+- memory efficient
+- usually faster
+
+Tail Recursion
+Recursive call is the last operation.
+
+Common Recursive Problems
+
+Factorial
+Time: O(n)
+Space: O(n)
+
+Fibonacci (naive)
+Time: O(2^n)
+Space: O(n)
+
+Optimized Fibonacci (DP)
+Time: O(n)
+Space: O(n) or O(1)
+
+Power of a Number
+Normal: O(n)
+Fast Exponentiation: O(log n)
+
+Sum of Digits
+Time: O(d)
+Space: O(d)
+
+Reverse String / Array
+Time: O(n)
+Space: O(n)
+
+Palindrome Check
+Time: O(n)
+Space: O(n)
+
+Tower of Hanoi
+Moves: 2^n - 1
+Time: O(2^n)
+Space: O(n)
+
+Recursive Sorting
+
+Merge Sort
+Time: O(n log n)
+Space: O(n)
+
+Quick Sort
+Average Time: O(n log n)
+Worst Time: O(n²)
+Space: O(log n) (recursion stack)
+
+=================================================
+MODULE 3: STACK
+=================================================
+
+Stack ADT (LIFO)
+
+Operations
+
+Push
+Time: O(1)
+
+Pop
+Time: O(1)
+
+Peek
+Time: O(1)
+
+Stack Implementation
+
+Using Array
+Push/Pop: O(1)
+
+Using Linked List
+Push/Pop: O(1)
+
+Applications
+
+Balanced Parentheses
+Time: O(n)
+Space: O(n)
+
+Infix → Postfix / Prefix Conversion
+Time: O(n)
+
+Expression Evaluation
+Time: O(n)
+
+Next Greater Element
+Time: O(n)
+Space: O(n)
+
+Stock Span Problem
+Time: O(n)
+Space: O(n)
+
+Important Reminders
+
+Stack follows LIFO:
+Last In First Out
+
+=================================================
+MODULE 4: QUEUE
+=================================================
+
+Queue ADT (FIFO)
+
+Operations
+
+Enqueue
+Time: O(1)
+
+Dequeue
+Time: O(1)
+
+Peek / Front
+Time: O(1)
+
+Queue Implementations
+
+Array Queue
+Enqueue/Dequeue: O(1)
+
+Circular Queue
+Avoids wasted space in array
+
+Linked List Queue
+Enqueue/Dequeue: O(1)
+
+Deque (Double Ended Queue)
+Insert/Delete from both ends
+
+Applications
+
+Sliding Window Maximum
+Time: O(n)
+Space: O(k)
+
+First Non-Repeating Character in Stream
+Time: O(n)
+
+Queue using Stack
+Push: O(1)
+Pop: O(n) OR amortized O(1)
+
+Stack using Queue
+Push: O(n)
+Pop: O(1)
+
+Important Reminders
+
+Queue follows FIFO:
+First In First Out
+
+Circular Queue prevents unused memory in array queues.
+

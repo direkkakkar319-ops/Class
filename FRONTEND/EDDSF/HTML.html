@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="word"></label>
+    <input type="text">
+    <button id="api-responses" onclick="getMeaning()">Submit</button>
+    <div>
+        <span id="word">hello</span>
+        <span id="btn">:form of gesture</span>
+    </div>
+</body>
+<script>
+    const inputWord = document.getElementById('dictionary');
+    const word = document.getElementById('word');
+    const meaning = document.getElementById('meaning');
+    async function getMeaning(){
+        const w = inputWord.value;
+        word.innerText = w;//used to diaplay 
+        const url = `https://freedictionaryapi.com/api/v1/entries/{language}/${w}`
+        
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log(data.entries[0].sesnes(0).defination);
+        
+        if (data?.entries[0]?.sesnes[0].length > 0){
+            meaning.innerText = data?.entries[0]?.sesnes[0]?.defination;
+        }
+        else{
+            return "No defenation is available"
+        }
+    }    
+</script>
+</html>

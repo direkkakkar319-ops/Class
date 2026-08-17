@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+</head>
+
+<body>
+    <h1>JAVA SCRIPT</h1>
+
+    <p id="demo"></p>
+    <p id="pop"></p>
+    <p id="lol"></p>
+    <p id="popp"></p>
+    <p id="poppp"></p>
+    <p id="pop1"></p>
+    <p id="pop2"></p>
+    <p id="pop3"></p>
+    <p id="pop4"></p>
+    <p id="pop5"></p>
+    <p id="pop6"></p>
+    <p id="pop7"></p>
+    <p id="pop8"></p>
+    <p id="pop9"></p>
+    <p id="pop10"></p>
+    <p id="pop11"></p>
+    <p id="pop12"></p>
+    <p id="pop13"></p>
+    <p id="pop14"></p>
+    <p id="pop15"></p>
+    <p id="pop16"></p>
+    <p id="pop17"></p>
+    <p id="pop18"></p>
+    <p id="pop19"></p>
+    <p id="pop20"></p>
+    <p id="pop21"></p>
+    <p id="pop22"></p>
+    <p id="pop23"></p>
+    <p id="pop24"></p>
+    <p id="pop25"></p>
+    <p id="pop26"></p>
+    <p id="pop27"></p>
+    <p id="pop28"></p>
+    <p id="pop29"></p>
+    <p id="pop30"></p>
+    <p id="pop31"></p>
+    <p id="pop32"></p>
+    <p id="pop33"></p>
+    <p id="pop34"></p>
+    <p id="pop35"></p>
+    <p id="pop36"></p>
+    <p id="pop37"></p>
+    <p id="pop38"></p>
+    <p id="pop39"></p>
+    <p id="pop40"></p>
+    <p id="pop41"></p>
+    <p id="pop42"></p>
+    <p id="pop43"></p>
+    <p id="pop44"></p>
+    <p id="pop45"></p>
+    <p id="pop46"></p>
+    <p id="pop47"></p>
+    <p id="pop48"></p>
+    <p id="pop49"></p>
+    <p id="pop50"></p>
+    <p id="pop51"></p>
+    <p id="pop52"></p>
+    <p id="pop53"></p>
+    <p id="pop54"></p>
+
+
+
+    <button type="button" onclick="document.write(5+6)">Try It</button>
+
+    <script>
+        // Printing using element ID
+        document.getElementById("demo").innerText = "Hello JavaScript";
+
+        // Printing sum of two numbers on the webpage
+        document.write("<br>" + (5 + 6));
+
+        // Printing in console tab
+        console.log(5 + 6);
+
+        // alert(5 + 6); // uncomment if you want to show alert
+
+        // Variable examples
+        let _x = 10;
+        let $p = 10;
+        const pp = 10;
+        let z = _x + $p + pp;
+        document.getElementById("pop").innerHTML = "The value of z is " + z;
+        console.log(z);
+
+        // FUNCTIONS
+        function new_function(p1, p2) {
+            return p1 * p2;
+        }
+        console.log(new_function(10, 10));
+
+        // Function without arrow
+        let myFunction = function (a, b) {
+            return a * b;
+        };
+        let myFunction01 = myFunction(10, 11);
+        console.log(myFunction01);
+        document.getElementById("lol").innerHTML = "Product of a and b is " + myFunction01;
+
+        // Function with arrow
+        let myFunction02 = (a, b) => a * b;
+        let lop = myFunction02(10,11);
+        console.log(lop);
+        document.getElementById("popp").innerHTML = "Product of a and b is " + lop;
+    
+        // Local variables
+        function localvariables() {
+            let carname = "mini cooper";
+            console.log(carname);
+        }
+        localvariables();
+
+        // Parameters and arguments
+        function greet(name, age) {
+            return `Hello ${name}, you are ${age} years old.`;
+        }
+        document.getElementById("poppp").innerHTML = greet("Rohan", 12);
+
+        // OBJECTS
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+
+        // Adding new properties
+        car.speed = "453";
+        document.getElementById("pop1").innerHTML = car.type;
+        document.getElementById("pop2").innerHTML = car.color;
+        document.getElementById("pop3").innerHTML = car.model;
+        document.getElementById("pop5").innerHTML = car.speed;
+
+        // Deleting properties
+        delete car.speed;
+
+        // Nested objects
+        const myyobj = {
+            name: "ewf",
+            age: 33,
+            mycars: {
+                car1: "Mini Cooper",
+                car2: "Defender",
+                car3: "Fortuner"
+            }
+        };
+        console.log(myyobj.mycars.car2);
+
+        // METHODS IN OBJECTS
+        const personn = {
+            firstnamee: "sd",
+            lastnamee: "fds",
+            fullname: function () {
+                return this.firstnamee + " " + this.lastnamee;
+            }
+        };
+        document.getElementById("pop6").innerHTML = personn.fullname();
+
+        // Adding method dynamically
+        personn.name1 = function () {
+            return this.firstnamee + " " + this.lastnamee;
+        };
+
+        // String method example
+        const popp23421 = "werewff w fjd kf sdf";
+        console.log(popp23421.toUpperCase());
+
+        // OBJECT CONSTRUCTOR FUNCTION
+        function Person(first, last, age) {
+            this.firstname = first;
+            this.lastname = last;
+            this.agee = age;
+        }
+        const names = new Person("Vasu", "Goyal", 20);
+        document.getElementById("pop4").innerHTML = names.agee + " " + names.lastname;
+
+        // DISPLAYING OBJECT PROPERTIES
+        const player = {
+            name: "few",
+            age: 324
+        };
+
+        // USING OBJECT.ENTRIES();
+        // for (let [key1,value1] of Object.entries(player)){
+        //     text33+=key1+":"+value1+"<br>";
+        // }
+        // document.getElementById("pop9").innerHTML=text33;
+
+        // USING FOR...IN LOOP
+        let text = "";
+        for (let key in player) {
+            text += player[key] + " ";
+        }
+        document.getElementById("pop7").innerHTML = text.trim();
+        
+        // USING OBJECT.VALUES();
+        const myArray=Object.values(player);
+        let text1 =myArray.toString();
+        document.getElementById("pop8").innerHTML=text;
+
+        // USIGN JSON.STRINGIGFY()
+        let text312=JSON.stringify(player)
+        document.getElementById("pop10").innerHTML=text312;
+
+        // DATES:
+        const date= new Date();
+        document.getElementById("pop11").innerHTML=date;
+
+        // ARRAY
+        const cars=["defender", "fortuner","range rover"];
+        document.getElementById("pop12").innerHTML=cars
+
+        // CHANGING ELEMENTS OF ARRAY
+        cars[1]="lambo";
+        console.log(cars);
+
+        // CHANGING ARRAY TO STRING
+        const street=["Banana", "Orange", "Apple", 234];
+        document.getElementById("pop13").innerHTML=street.toString();
+
+        // length of an array
+        let street_len=street.length;
+
+        // first element of array
+        let first_element=street[0];
+        document.getElementById("pop14").innerHTML=first_element;
+
+        // last element
+        let last_element=street[street.length-1];
+        document.getElementById("pop15").innerHTML=last_element;
+
+        // loop
+        // let text442="<ul>"
+        // for(let i=0;i<street.length;i++){
+        //     text442+="<li>"+street[i]+"</li>";
+        // }
+        // document.getElementById("pop16").innerHTML=text442;
+        
+       
+        let text32442="<ul>";
+        let i=0;
+        while (i<street.length){
+            text32442+="<li>"+street[i]+"</li>";
+            i+=1;
+        }
+        document.getElementById("pop17").innerHTML=text32442;
+        
+        // printing using for each function
+        let text45645="<ul>";
+        street.forEach(lulilelo);
+        text45645+="<ul>";
+        function lulilelo(value345){
+            text45645+="<li>" + value345 + "</li>";
+        }
+        document.getElementById("pop18").innerHTML=text45645;
+
+        // creating new ARRAY by diffrent methods
+        // method 1
+        const point01 = new Array(1324,34,4,2342,324,4,"dasr","daqf");
+        // method02
+        const point02 = [];
+
+        // checking how to recoganise an array
+        document.getElementById("pop19").innerHTML=typeof point01;
+        document.getElementById("pop20").innerHTML=Array.isArray(point01);
+        // document.getElementByID("pop21").innerHTMl="Array:" + (point01 instanceof Array);
+
+        // nested array and objects
+        const array_object={
+            name3124:"sexy",
+            age34:69,
+            cars1324:[
+                {name3124:"FORD",modals3245:["defender", "fortuner","range rover"]},
+                {name3124:"BMW", modals3245:["320", "X3", "X5"]},
+                {name3124:"Fiat", modals3245:["500", "Panda"]}
+            ]
+        }
+            
+            // accessing emelemts from an nested array and object
+            let x3243="";
+            for(let i in array_object.cars1324)
+            {
+                x3243+="<h2>" + array_object.cars1324[i].name3124 + "</h2>";
+                for(let j in array_object.cars1324[i].modals3245)
+                {
+                    x3243+=array_object.cars1324[i].modals3245[j] + "<br>";
+                }
+            }
+        document.getElementById("pop22").innerHTML=x3243;
+
+        // left-out array methods
+        const point03 = new Array(1324,34,4,2342,324,4,"dasr","daqf");
+
+        // point03.at() function or point03[] can also be used
+        document.getElementById("pop23").innerHTML=point03.at(6);
+        
+        // .join() function
+        document.getElementById("pop24").innerHTML=point03.join("*");
+        
+        // .pop() function
+        document.getElementById("pop25").innerHTML=point03.pop(6);
+        
+        // .push() function
+        point03.push("lund le lo mere apne muh me");
+        document.getElementById("pop26").innerHTML=point03;
+        
+        // .shift() function
+        point03.shift();
+        document.getElementById("pop27").innerHTML=point03;
+        
+        // .unshift() function
+        point03.unshift(1324);
+        document.getElementById("pop28").innerHTML=point03;
+        
+        // Array.isArray() function
+        document.getElementById("pop29").innerHTML=Array.isArray(point03);
+        
+        // delete() function
+        delete point03[0]
+        document.getElementById("pop30").innerHTML=point03;
+        
+        // .concat() function
+        const point04=point03.concat("hello world");
+        document.getElementById("pop31").innerHTML=point04;
+        
+        // .copyWithin() function
+        document.getElementById("pop32").innerHTML=point04.copyWithin(6,0);
+        
+        // .flatMap() function
+        const point06=[12,23,4,233,213,312,1223]
+        const point05_1=point06.flatMap(x => [x, x*10]);
+        document.getElementById("pop33").innerHTML=point05_1;
+        
+        // .flat() function
+        const point05=[[12,23,4],[233,213],[312,1223,]]
+        point05.flat();
+        document.getElementById("pop34").innerHTML=point05;
+        
+        // .splice() function
+        point05.splice(2,0,"hello","world");
+        document.getElementById("pop35").innerHTML=point05;
+    
+        point05.splice(2,1,"gandu language");
+        document.getElementById("pop36").innerHTML=point05;
+        
+        // .slice() function
+        const citrus = point05.slice(2);
+        document.getElementById("pop37").innerHTML=point05 + "<br> <br>" + citrus ;
+
+        // searching in an array
+        const point07=["Apple", "Orange", "Apple", "Mango"];
+        
+        // .indexOf() function
+        let indexOf_00=point07.indexOf("Apple");
+        console.log(indexOf_00)
+        
+        // .lastIndexOf() function
+        let lastIndexOf_00=point07.lastIndexOf("Apple");
+        console.log(lastIndexOf_00);
+        
+        // .includes() function
+        console.log(point07.includes("Apple"));
+        
+        // .find() function
+        point08=[4, 9, 16, 25, 29]
+        let find_00=point08.find(my90543);
+        function my90543(value,index,array){
+            return value>18;
+        }
+        console.log(find_00);
+        
+        // .findIndex() function
+        let findindex_00=point08.findIndex(my90543);
+        console.log(findindex_00);
+        
+        // .findLast() function
+        let high=point08.findLast(x => x > 10);
+        console.log(high);
+        
+        // .findLastIndex() function
+        let high_00=point08.findLastIndex(x => x > 10);
+        console.log(high_00);
+
+        // sorting in array
+        // for alphbetical arrays
+        
+        // .sort()
+        point07.sort();
+        console.log(point07); 
+        
+        // .reverse()
+        console.log(point07.reverse())
+        
+        // .toSorted()
+        const sorted_00=point07.toSorted();
+        console.log(sorted_00);
+        
+        // .toReversed
+        const reversed_00=point07.toReversed();
+        console.log(reversed_00);
+        
+        // for numerical arrays 
+        const point09=[40, 100, 1, 5, 25, 10];
+        
+        // ascending order
+        console.log(point09.sort(function(a,b){return a-b}));
+        
+        // minimum number from sorting
+        console.log(point09[0]);
+        
+        // descending order
+        console.log(point09.sort(function(a,b){return b-a}));
+        
+        // maximum number from sorting
+        console.log(point09[0]);
+        
+        // sorting an array in random order
+        console.log(point09.sort(function(){return 0.5 - Math.random()}));
+        
+        // Fisher Yates Method
+        const points=[40, 100, 1, 5, 25, 10];
+        for(let i=points.length-1 ; i>0 ; i--){
+            let j = Math.floor(Math.random()*(i+1));
+            let k = points[i];
+            points[i] = points[j];
+            points[j] = k;
+        }
+        console.log(points);
+        
+        // using Math.min.apply
+        console.log(myArray_min(points));
+        function myArray_min(arr){
+            return Math.min.apply(null, arr);
+        }
+        
+        // using math.max.apply
+        console.log(myArray_max(points));
+        function myArray_max(arr){
+            return Math.max.apply(null, arr);
+        }
+
+        // sorting object arrays
+        // by numbers
+        const cars0980_9034=[
+            {type:"Volvo", year:2016},
+            {type:"Saab", year:2001},
+            {type:"BMW", year:2010}
+        ];
+        cars0980_9034.sort(function(a,b){return a.year - b.year});
+        console.log(cars0980_9034);
+        
+        // by strings
+        cars0980_9034.sort(function(a,b){
+            let x = a.type.toLowerCase();
+            let y = b.type.toLowerCase();
+            if (x < y){ return -1;}
+            if (x > y){ return 1;}
+            return 0;
+        });
+        console.log(cars0980_9034);
+
+        // forEach()
+        // const point09=[40, 100, 1, 5, 25, 10];
+        let text_pop="";
+        point09.forEach(myFunction_001);
+        function myFunction_001(value, index, array){
+            text_pop+=value+"<br>";
+        }
+        console.log(text_pop);
+        
+        // map()
+        const point09_map=point09.map((x) => x*10);
+        console.log(point09_map);
+        
+        // filter()
+        const point09_filter=point09.filter((x) => x > 10);
+        console.log(point09_filter);
+
+        // reduce()
+        const point09_reduce=point09.reduce((b,a) => a+b);
+        console.log(point09_reduce);
+
+        // reduceRight()
+        const point09_reduceRight=point09.reduceRight((a,b)=>a-b);
+        console.log(point09_reduceRight);
+        
+        // every()
+        console.log(point09.every((x) => x>10));
+
+        // some()
+        console.log(point09.some((x) => x>10));
+
+        // from()
+        let arrwf="DNDFGHDFGHCVBNTYU";
+        console.log(Array.from(arrwf));
+
+        // keys()
+        let point09_keys=point09.keys();
+        let awfsfsfe="";
+        for(let x of point09_keys){
+            awfsfsfe+= x + "<br>";
+        }
+        console.log(awfsfsfe);
+
+        // entries
+        const point09_entries=point09.entries();
+        for(let x of point09_entries){
+            document.getElementById("pop38").innerHTML+=x+"<br>";
+        }
+
+        // with()
+        let numbers_max_min01=[23,55,21,87,56];
+        let numbers_max_min02=[3,55,21,87,56];
+        const lolo_009=numbers_max_min01.with(3,321)
+        console.log(lolo_009);
+
+        // Spread()
+        
+        console.log(Math.min(...numbers_max_min01));
+        console.log(Math.max(...numbers_max_min02));
+        console.log([...numbers_max_min01,...numbers_max_min02]);
+
+        // Rest() Allows us to destruct an array and collect the leftovers
+        let a_rest, b_rest, rest;
+        const arr_rest=[1,2,3,4,5,6,7,8];
+        [a,...rest]=arr_rest;
+        console.log(rest);
+
+        // TYPED ARRAYS
+        // typed of array of 5 bytes
+        const arr_typed01 = new Uint8Array(5);
+        console.log(arr_typed01);
+
+        // typed array from an array
+        const arr_typed02 = Uint8Array.from([1,2,2,2,2,1,2]);
+        console.log(arr_typed02);
+        // typed array from list
+        const arr_typed03 = Uint8Array.of(1,2,2,2,32,21,12);
+        console.log(arr_typed03);
+        // typed array of 10 signed 8 bit integer 
+        const arr_typed04 = new Int8Array(10);
+        console.log(arr_typed04);
+        // typed array of 10 unsigned 8bit integer
+        const arr_typed05 = new Uint8Array(10); 
+        console.log(arr_typed05);
+        // typed array of 10 using 8 bit integers
+        const arr_typed06 = new Uint8ClampedArray(10); 
+        console.log(arr_typed06);
+        // typed array of 10 signed 16 bit integers
+        const arr_typed07 = new Int16Array(10);
+        console.log(arr_typed07);
+        // typed array of 10 unsigned 16 bit integers
+        const arr_typed08 = new Uint16Array(10);
+        console.log(arr_typed08);
+        
+        // 
+
+// Name             Description
+// [ ]	            Creates a new Array
+// new Array()      Creates a new Array
+// at()	            Returns an indexed element of an array
+// concat()	        Joins arrays and returns an array with the joined arrays
+// constructor      Returns the function that created the Array prototype
+// copyWithin()     Copies array elements within the array, to and from specified positions
+// entries()	    Returns a key/value pair Array Iteration Object
+// every()	        Checks if every element in an array pass a test
+// fill()	        Fill the elements in an array with a static value
+// filter()	        Creates a new array with every element in an array that pass a test
+// find()	        Returns the value of the first element in an array that pass a test
+// findIndex()	    Returns the index of the first element in an array that pass a test
+// findLast()	    Returns the value of the last element in an array that pass a test
+// findLastIndex()	Returns the index of the last element in an array that pass a test
+// flat()	        Concatenates sub-array elements
+// flatMap()	    Maps all array elements and creates a new flat array
+// forEach()	    Calls a function for each array element
+// from()	        Creates an array from an object
+// includes()	    Check if an array contains the specified element
+// indexOf()	    Search the array for an element and returns its position
+// isArray()	    Checks whether an object is an array
+// join()	        Joins all elements of an array into a string
+// keys()	        Returns a Array Iteration Object, containing the keys of the original array
+// lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+// length	        Sets or returns the number of elements in an array
+// map()	        Creates a new array with the result of calling a function for each array element
+// of()	            Creates an array from a number of arguments
+// pop()	        Removes the last element of an array, and returns that element
+// prototype	    Allows you to add properties and methods to an Array object
+// push()	        Adds new elements to the end of an array, and returns the new length
+// reduce()	        Reduce the values of an array to a single value (going left-to-right)
+// reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+// reverse()	    Reverses the order of the elements in an array
+// shift()	        Removes the first element of an array, and returns that element
+// slice()	        Selects a part of an array, and returns the new array
+// some()	        Checks if any of the elements in an array pass a test
+// sort()	        Sorts the elements of an array
+// splice()	        Adds or Removes array elements
+// toReversed()	    Reverses the order of array elements (to a new array)
+// toSorted()	    Sorts the elements of an array (to a new array)
+// toSpliced()	    Adds or Removes array elements (to a new array)
+// toString()	    Converts an array to a string, and returns the result
+// unshift()	    Adds new elements to the beginning of an array, and returns the new length
+// valueOf()	    Returns the primitive value of an array
+// with()	        Returns a new array with updated elements
+const response = await.post('https://dummyjson.com/posts',{
+    
+});
+console.log(response.data);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            background-image: url("dosch-1776587_1280.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .leftcontainer {
+            color: purple;
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .rightcontainer {
+            width: 1000px;
+            color: red;
+            border-radius: 20%;
+            display: grid;
+            grid-template-columns: repeat(6, 100px);
+            grid-template-rows: repeat(5, 100px);
+            grid-template-areas:
+                "a a b b b b"
+                "a a c c d d"
+                "e e e e d d"
+                "f f g g g g"
+                "f f g g g g";
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .box1 {
+            background-image: url("Spring_Lake\,_New_Jersey_Beach_at_Sunrise.jpg");
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: a;
+
+        }
+
+        .box2 {
+            background-image: url("ocean-waves.jpg");
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: b;
+        }
+
+        .box3 {
+            background-image: url("4567914-min-1200x834.jpg.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: c;
+        }
+
+        .box4 {
+            background-image: url("mount-everest-at-sunset.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: d;
+        }
+
+        .box5 {
+            background-image: url("angel-oak-tree-in-Johns-Island-South-Carolina.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: e;
+        }
+
+        .box6 {
+            background-image: url("maldives-island-beach-tropical-landscape-600nw-2547983501.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: f;
+        }
+
+        .box7 {
+            background-image: url("shutterstock_368490641-min.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            grid-area: g;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftcontainer">
+            <h2>
+                My gallary
+            </h2>
+            <p>
+            <pre>
+We were too busy making memories to capture it.
+Live in the moment; write it down later.
+All I want to do in this moment is be with you.
+            </pre>
+            </p>
+        </div>
+        <div class="rightcontainer">
+
+            <div class="box box1">Sunrise</div>
+            <div class="box box2">ocean</div>
+            <div class="box box3">waterfalls</div>
+            <div class="box box4">mountain</div>
+            <div class="box box5">trees</div>
+            <div class="box box6">beach</div>
+            <div class="box box7">rose</div>
+        </div>
+    </div>
+</body>
+
+</html>

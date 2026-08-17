@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--for styling linking the bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--for linking the javascript file-->
+</head> 
+
+<body>
+    <div class="container-fluid">
+        <!-- fully cover the container -->
+        <h1>My First Bootstrap Page</h1>
+        <p>This part is inside a .container-fluid class</p>
+        <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+    </div>
+    <div class="container pt-3">
+        <h1>Responsive Containers</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    <!--
+    mt-margin top(it will give margin form top only)
+    my-margin from y-axis(it will give margin vertically--making the container more of a rectangle)
+    m-margin for whole container
+    pt stands for padding top 3 meas pading top 1 rem or 16px
+    -->
+    <!--
+    sm(small),md(medium),lg(large),xl(extra-large),xxl(extra-extra large) they are size of a container
+    p-5 is the length of paragraph 5 means the 3rem(4 is 1.5rem and 3 is 1rem and 2 is 0.5rem and 1 is 0.25rem) 
+    -->
+    <div class="container-sm border">.container-sm</div>
+    <div class="container-md mt-3 border">.container-md</div>
+    <div class="container-lg mt-3 border">.container-lg</div>
+    <div class="container-xl mt-3 border">.container-xl</div>
+    <div class="container-xxl mt-3 border">.container-xxl</div>
+    <div class="container p-5 my-5 border">
+        <h1>My First Polaris page </h1>
+        <p>This container has a border and some extra padding and margins.</p>
+    </div>
+    <div class="container p-5 my-5 bg-dark text-white">
+    <!-- 
+        container to make a container throught bootsrtap
+        p-5 means paragraph will me 3rem or (3*16px) 
+        bg-dark makes background color dark or more opaque usually black 
+        text-white makes color of the text as white by using bootsrtap properties
+    -->
+        <h1>My First polaris Page</h1>
+        <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+    </div>
+    <div class="container p-5 my-5 bg-primary text-white">
+        <h1>My First polaris Page</h1>
+        <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+    </div>
+    <div>
+        <p class="d-none d-md-block">
+            <!-- d is for display -->
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-lg-block">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-sm-block">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-lg-flex">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+    </div>
+    <div>
+        <p class="d-none d-md-block">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-lg-block">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-sm-block">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+        <p class="d-none d-lg-flex">
+            This text is hidden on small screens but visible on medium+ screens.
+        </p>
+    </div>
+    <div>
+        <!-- they are same as we used in html for defining height in <h1> to <h6> tags -->
+        <p class="h1">h1 Bootstrap heading</p>
+        <p class="h2">h2 Bootstrap heading</p>
+        <p class="h3">h3 Bootstrap heading</p>
+        <p class="h4">h4 Bootstrap heading</p>
+        <p class="h5">h5 Bootstrap heading</p>
+        <p class="h6">h6 Bootstrap heading</p>
+    </div>
+    <div>
+        <!-- only for display -->
+        <p class="display-1">Display 1</p>
+        <p class="display-2">Display 2</p>
+        <p class="display-3">Display 3</p>
+        <p class="display-4">Display 4</p>
+        <p class="display-5">Display 5</p>
+        <p class="display-6">Display 6</p>
+    </div>
+    <div>
+        <p class="lead">Lead text</p>
+        <!-- lead is for larger and more emphasis and used for introductory -->
+        <p class="text-muted">Muted text</p>
+        <!-- text is for mute or secondary vision importance -->
+        <p class="text-primary">Primary text</p>
+        <!-- change the text color to the default theme color -->
+        <p class="text-secondary">Secondary text</p>
+        <!-- color is greyesh tone usually for less important text items -->
+        <p class="text-success">Success text</p>
+        <!-- changr the text color to green usually for success messages -->
+        <p class="text-info">Info text</p>
+        <!-- used for informational text  -->
+        <p class="text-warning">Warning text</p>
+        <!-- text for warnings usually yellow or orange -->
+        <p class="text-danger">Danger text</p>
+        <!-- text color changes to red usually for dangerous actions -->
+        <p class="text-light">Light text</p>
+        <!-- makes text very light usually for giving contrast on a darker backgrounds -->
+        <p class="text-dark">Dark text</p>
+        <!-- makes text dark usually for giving contrast on a lighter backgrounds -->
+    </div>
+    <div>
+        <!-- for transpiracy or opacity of text -->
+        <p class="fw-bold">Bold text</p>
+        <p class="fw-bolder">Bolder text</p>
+        <p class="fw-normal">Normal text</p>
+        <p class="fw-light">Light text</p>
+        <p class="fw-lighter">Lighter text</p>
+    </div>
+    <div>
+        <img src="https://imgs.search.brave.com/nuLwQOLpeg--qxCV7CceAoWhJwEioWjA9-8fZgwFeY8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTI5/NTE2MzA0L3Bob3Rv/L3dvbWFuLWF0LXRo/ZS1iZWFjaC1waG90/b2dyYXBoaW5nLXRo/ZS1zdW5zZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPURR/czRIbVZQWEJrNjg3/QWZlRVhETWV2Nmg0/X1hCRW1fcVI2eW1k/WU5oQ2M9"
+            class="rounded" alt="Photo">
+        <img src="https://imgs.search.brave.com/nuLwQOLpeg--qxCV7CceAoWhJwEioWjA9-8fZgwFeY8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTI5/NTE2MzA0L3Bob3Rv/L3dvbWFuLWF0LXRo/ZS1iZWFjaC1waG90/b2dyYXBoaW5nLXRo/ZS1zdW5zZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPURR/czRIbVZQWEJrNjg3/QWZlRVhETWV2Nmg0/X1hCRW1fcVI2eW1k/WU5oQ2M9"
+            class="rounded-circle" alt="Photo">
+        <img src="https://imgs.search.brave.com/nuLwQOLpeg--qxCV7CceAoWhJwEioWjA9-8fZgwFeY8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTI5/NTE2MzA0L3Bob3Rv/L3dvbWFuLWF0LXRo/ZS1iZWFjaC1waG90/b2dyYXBoaW5nLXRo/ZS1zdW5zZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPURR/czRIbVZQWEJrNjg3/QWZlRVhETWV2Nmg0/X1hCRW1fcVI2eW1k/WU5oQ2M9"
+            class="img-thumbnail" alt="Photo">
+        <img src="https://imgs.search.brave.com/nuLwQOLpeg--qxCV7CceAoWhJwEioWjA9-8fZgwFeY8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTI5/NTE2MzA0L3Bob3Rv/L3dvbWFuLWF0LXRo/ZS1iZWFjaC1waG90/b2dyYXBoaW5nLXRo/ZS1zdW5zZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPURR/czRIbVZQWEJrNjg3/QWZlRVhETWV2Nmg0/X1hCRW1fcVI2eW1k/WU5oQ2M9"
+            class="img-fluid" alt="Photo">
+    </div>
+    <div>
+        <!-- for aligning the text -->
+        <p class="text-Start">Left aligned text</p>
+        <p class="text-center">Center aligned text</p>
+        <p class="text-End">Right aligned text</p>
+    </div>
+    <div>
+        <!-- used for giving color to the background of the text -->
+        <p class="text-bg-primary"> fireeeeeeeee </p><!-- blue -->
+        <p class="text-bg-info"> fireeeeeeeee </p><!-- light blue -->
+        <p class="text-bg-success"> fireeeeeeeee </p><!-- green -->
+        <p class="text-bg-warning"> fireeeeeeeee </p><!-- yellow -->
+        <p class="text-bg-danger"> fireeeeeeeee </p><!-- red -->
+        <p class="text-bg-secondary"> fireeeeeeeee </p><!-- grey -->
+        <p class="text-bg-dark"> fireeeeeeeee </p><!-- black -->
+        <p class="text-bg-light"> fireeeeeeeee </p><!-- light grey -->
+        <p class="text-bg-body"> fireeeeeeeee </p><!-- no color -->
+        <p class="text-bg-white"> fireeeeeeeee </p><!-- white -->
+    </div>
+    <div>
+        <p class="m-3"> margin spaceing </p>
+        <p class="p-3 bg-light"> padding spaceing </p>
+        <p class="border p2"> border spaceing </p>
+    </div>
+    <div>
+        <!-- giving shape to the border -->
+        <p class="rounded border p-3"> Border radius </p>
+        <!-- just rounds the border -->
+        <p class="rounded-pill border p-3">pill Border radius </p>
+        <!-- makes the border like a retangled-rounded capsule -->
+        <p class="rounded-circle border p-3"> circle Border radius </p>
+        <!-- makes the shape of an egg -->
+    </div>
+    <div>
+        <p class="d-flex justify-content-start"> start </p>
+        <p class="d-flex justify-content-center"> center </p>
+        <p class="d-flex justify-content-end"> end </p>
+        <p class="d-flex justify-content-between"> between </p>
+        <p class="d-flex justify-content-around"> around </p>
+    </div>
+    <!-- used for navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-danger">
+        <!-- 
+        navbar for displaying nav bar
+        navbar-expand-sm for fully expanding the navbar
+        bg-danger is for making the navbar color red
+        -->
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- navbar-nav for arranging items vertically in the list -->
+                <li class="nav-item">
+                    <!-- marks item in the navbar -->
+                    <a class="nav-link" href="#">Link 1</a>
+                    <!-- styles the link according to the bootstrap's navbar link style -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!--
+            .carousel for activating bootstraps styling and behaviour
+            .slide allows us to add sliding animations between crousal items
+            "carousal" tells the bootstrap to automatically cycle through carousal items
+            -->
+            <div class="carousel-indicators">
+                <!-- holds small navigation buttons for shifting images in carousal -->
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <!-- it will start form the 0th slide or the 1st carousal item -->
+                 <!-- "active" is for telling the bootstrap that "0" will be seen when user open the website -->
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- it is a wrapper that holds the all the slide or carousal items -->
+                <div class="carousel-item active">
+                    <!-- active will show the slide when the webpage is first opened or reloaded -->
+                    <img src="https://imgs.search.brave.com/ldJmEGPcPFYdvKoXi-S9szgE5VZCAIPSfKi7OtsBwqc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ3/MzA3MTM2Ny9waG90/by95b3VuZy13b21h/bi10YWtpbmctcGhv/dG9ncmFwaC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ZFRn/M2MwbWVkeDI0QmV0/YmliXzVhVWo5V21M/QV9GcDhkdHJBQ05G/cU4yMD0"
+                        alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgs.search.brave.com/JWs2sq0IO_W4_1BqLHS9KaxpYEfHOUWIvsUNfe28Ies/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MDI2MDAwL3Bob3Rv/L2NoaWNhZ28tc2t5/bGluZS12aWV3Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz01/aElvVzMzRFNKdXli/b3lsUTNhRE1wdlFT/cEVHc1ZYcEtzc05K/a05EZTg4PQ"
+                        alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgs.search.brave.com/vTVGy7HOko5bgEi5bWrlbfqk1g-X9pEbUsFqYyC0qWo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTMz/OTk4NzEzL3Bob3Rv/L2VtcGlyZS1zdGF0/ZS1idWlsZGluZy1h/dC1uaWdodC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9MmZa/Q2NacTMxODZGOVIy/V0haMmhFQmg0ZFZz/T1g3cHFnY1ZSWFhu/MTk1ST0"
+                        alt="New York" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <!-- 
+                .carousel-control-prev: Styles the button as a “previous” arrow on the left side.
+                data-bs-target="#demo": Connects this button to the carousel with ID demo.
+                data-bs-slide="prev": Tells Bootstrap to move to the previous slide when clicked.
+                .carousel-control-prev-icon: Inserts the left arrow icon.
+                -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- next is for right button and prev button for previous button or left -->
+    </div>
+
+
+
+
+    <form action="/action_page.php"><!-- tells the browser where to send the data when subbmitted -->
+        <div cla+ss="mb-3 mt-3"><!-- mb(margin bottom) and mt(margin bottom) are for margin -->
+            <label for="email" class="form-label">Email:</label><!--  -->
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
+    <div>
+        <button type="button" class="btn">Basic</button><!-- a neutral button -->
+        <button type="button"
+            class="btn btn-primary">Primary</button><!-- primary is for highlighting most important action -->
+        <button type="button"
+            class="btn btn-secondary">Secondary</button><!-- secondary action is for supporting the pimary or main tasks -->
+        <button type="button"
+            class="btn btn-success">Success</button><!-- for actions that indicates conformation or success usually green -->
+        <button type="button"
+            class="btn btn-info">Info</button><!-- for actions that give extra information usually blue -->
+        <button type="button"
+            class="btn btn-warning">Warning</button><!-- for actions that need cautions usually orange or yellow -->
+        <button type="button"
+            class="btn btn-danger">Danger</button><!-- for actions that might be ir-reversible or delete important information usually red in color -->
+        <button type="button" class="btn btn-dark">Dark</button><!-- neutral button but styled with dark theme -->
+        <button type="button" class="btn btn-light">Light</button><!-- neutral button styles with light theme -->
+        <button type="button" class="btn btn-link">Link</button><!-- used when we want to blend button with text -->
+        <!--
+        🔵 Primary = most important
+        ⚪ Secondary = backup action
+        🟢 Success = positive action
+        🔵 Info = neutral/extra info
+        🟠 Warning = caution
+        🔴 Danger = destructive action
+        ⚫ Dark = dark style button
+        ⚪ Light = light style button
+            Link= blending the button with text
+        -->
+    </div>
+    <div class="card"><!-- used in bootstrap to diaply grouped content -->
+        <div class="card-body">Basic card</div><!-- holds the main content of the card -->
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal<!-- "model" tells bootstrap to open a modal 
+        "#myModal" specifies which modal to open
+        clicking the link opens the popup modal for alerts or forms 
+        -->
+    </button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog"><!-- wraps the model content and defines the size and position of the modal window -->
+            <div class="modal-content"><!-- the box itself inside the modal -->
+                <div class="modal-header"><!-- modalheader is the top section of modal -->
+                    <h4 class="modal-title">Modal Heading</h4><!-- displays the heading or title of modal -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <!-- btn-close a small x button to close the modal -->
+                    <!-- data-bs-dismiss="modal" lcoses the modal -->
+                    </button>
+                </div>
+                <div class="modal-body"><!-- middel section of modal where the main content goes -->
+                    Modal body..
+                </div>
+                <div class="modal-footer"><!-- bottom section of modal usually contains action buttons -->
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning">Warning</span>
+    <span class="badge bg-info">Info</span>
+    <span class="badge bg-light">Light</span>
+    <span class="badge bg-dark">Dark</span>
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+    <!-- 
+    "collapse" will tell bootstrap that this button will control a collapse component like expand collapse content
+    #demo specifies which element will expand or collapse
+    -->
+    <div id="demo" class="collapse">
+        <!-- 
+        class="collapse" it hides the content by default
+        toggles between hidden and visible
+        -->
+        Lorem ipsum dolor text....
+    </div>
+    <div class="dropdown">
+        <!-- class="dropdown" starts the dropdown component -->
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+            <!-- class here styles the button as blue primary button and adds the dropdown icon -->
+        </button>
+        <ul class="dropdown-menu"><!-- bootstrap class that styles list as dropdown list -->
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+            <!-- drop item is used to style the links as dropdown menu items
+            "#" in href usually links other web page  
+            -->
+        </ul>
+    </div>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        // doccument.querySelectorAll('[data-bs-toggle="tooltip"]'')
+        // slects all the elemetns in the page that have data-bs-toggle="tooltip" 
+        // [].slice.call(...) coverts Nodelist returned by querySlectorAll into a regular array
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})
+    </script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {return new bootstrap.Popover(popoverTriggerEl)})
+    </script>
+</body>
+
+</html>

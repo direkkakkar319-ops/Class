@@ -1,0 +1,24 @@
+ISA hierarchy
+An ISA Hierarchy represents a "Type-Of" relationship. It allows you to group common attributes in one place while keeping specific attributes separate.
+
+Superclass: The generic entity (e.g., Employee).
+Subclass: The specialized entity (e.g., Developer, Manager).
+The Link: We say a Developer ISA Employee. This means the Developer inherits all attributes of the Employee (like ID, Name, Salary) plus has their own specific attributes (like Programming Language).
+Key Features of ISA Hierarchies
+To explain this to students clearly, focus on these three core concepts:
+
+1. Attribute Inheritance
+The subclass does not need to redefine attributes of the superclass.
+
+If Employee has Emp_ID, then Manager automatically has Emp_ID.
+The subclass only lists its unique attributes (e.g., Manager has Bonus_Budget).
+2. Participation Constraints
+This defines if every member of the superclass must belong to a subclass.
+
+Total Specialization (Double Line): Every Employee must be either a Manager or a Developer.
+Partial Specialization (Single Line): An Employee can just be an "Employee" without fitting into a specific subclass.
+3. Disjoint vs. Overlapping Constraints
+This defines if an entity can belong to more than one subclass at once.
+
+Disjoint (d): An entity can be in only one subclass (e.g., a person is either a Male or a Female).
+Overlapping (o): An entity can be in multiple subclasses (e.g., a person at a university can be both a Student and an Employee)-

@@ -1,0 +1,19 @@
+Tables
+The tables are the strong entities that we have. Here we have the STUDENT, LECTURER, SUBJECT, and COURSE.
+
+Columns in each Table
+The columns of a table are the attributes associated with that entity. Let's take a look at each table.
+
+We will first consider the Simple attributes that are not Composite or Multivalued.
+
+Student Table: Std_Id(KEY), Std_Name, DOB
+Teacher Table: Teach_Id(KEY), Teach_Name
+Subject Table: Sub_Id(KEY), Sub_Name
+Course Table: Crs_Id(KEY), Crs_Name
+Now, let's consider the Multivalued attributes like HOBBY.
+
+We will be having a separate table for the Multivalued attribute like HOBBY. Here we will consider the columns as Stud_Hobby and Std_Id. The Std_Id will associate the hobby with that particular student.
+
+Composite Attributes
+
+For composite attributes, like ADDRESS, we will have each of the CITY and STREET as a column in the Student Table.

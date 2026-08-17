@@ -1,0 +1,78 @@
+Keys In RDBMS
+What are keys?
+Keys in databases play a crucial role in ensuring data integrity, facilitating relationships, and uniquely identifying records.
+
+Candidate Key
+A Candidate Key is a minimal set of attributes that can uniquely identify each row in a table.
+It serves as the foundation for selecting the Primary Key, which ensures record uniqueness and data integrity.
+Let's consider an "Employees" table with various attributes:
+
+Employees Table:
+
+Employee ID	Name	Department	Email
+101	Alice	HR	alice@email.com
+102	Bob	IT	bob@email.com
+103	Carol	HR	carol@email.com
+Here, both "Employee ID" and "Email" can uniquely identify employees. Therefore, both "Employee ID" and "Email" are candidate keys for this table.
+
+Primary Key
+A Primary Key is a chosen Candidate Key that uniquely identifies each record in a table.
+It's a vital component of maintaining data integrity.
+For example, let's take the same Employee Table:
+
+Employees Table:
+
+Employee ID	Name	Department	Email
+101	Alice	HR	alice@email.com
+102	Bob	IT	bob@email.com
+103	Carol	HR	carol@email.com
+We can choose the Employee ID to be a Primary Key (PK).
+
+Super Key
+A Super Key is a set of attributes that can identify a record, possibly with additional attributes.
+It's more comprehensive than Candidate and Primary Keys.
+The word super denotes the superiority of a key.
+Thus, a super key is the superset of a key known as a Candidate key
+
+Consider an "Inventory" table for a retail store:
+
+Product ID	Product Name	Category	Price	Stock Quantity
+101	Laptop	Electronics	$800	15
+102	T-shirt	Clothing	$20	100
+103	Smartphone	Electronics	$500	30
+
+Alternate Key
+The candidate key other than the primary key is called an alternate key. It provides an alternative unique identifier. For instance:
+
+Customer ID	Name	Email
+401	Elena	elena@email.com
+402	Frank	frank@email.com
+For example, both Customer ID and Email are Candidate keys, suppose we choose Customer ID as a primary key, in that case Email will be our Alternate Key.
+
+Foreign Key
+A Foreign Key establishes a connection between tables by referencing the Primary Key of another table.
+It forges relationships and maintains data consistency.
+
+Example:
+Customers Table:
+
+Customer ID	Name	Email
+401	Elena	elena@email.com
+402	Frank	frank@email.com
+Orders Table:
+
+Order ID	Customer ID (Foreign Key)	Product
+501	401	Widget A
+502	402	Widget B
+The Customer ID serves as a Foreign Key in the Orders Table and serves as a connection between the two tables.
+
+Composite Key
+A Composite Key combines two or more attributes to uniquely identify records.
+It's useful when individual attributes might not be unique alone. For example:
+
+Student Table:
+
+DOB	StudentName	Marks
+2002-05-10	Alice	85
+2003-08-15	Bob	92
+2002-03-21	Alice	78

@@ -1,0 +1,74 @@
+Attributes
+Attributes are the properties or characteristics of an entity. They provide more details about the entity, like specific values that describe or identify it. In simple terms, attributes are the columns in a table in a database, while the entity is the table itself.
+
+1. Key Attribute
+Key attribute is basically something unique that helps us identify each record distinctly - like a fingerprint! 👆
+Think of it like this:
+
+You know how in a college, every student has a unique roll number? Even if two students have the same name, their roll numbers are different. That's exactly what a key attribute does - it ensures everyone/everything has a unique identifier.
+File system
+Key Attribute Representation in ERD:
+
+Key attribute is represented by an oval with underlying lines.
+File system
+Points to Remember:
+
+Must be unique (no duplicates allowed)
+Cannot be null
+Should rarely or never change
+Often used as references in other tables
+
+
+2. Composite Attribute
+A composite attribute is when you combine multiple simple attributes to form a single meaningful attribute.
+Think of it like this:
+
+It's like your full address - you don't just write "123" and call it a day.
+Your complete address is made up of house number, street name, city, and zip code.
+Each part alone doesn't give the full picture, but together they form your complete address!
+
+Here, the full address is a composite attribute made up of street, city, and zip.
+
+Composite attribute is represented by an oval comprising of ovals.
+
+Points to Remember:
+Can be broken down into smaller parts
+Each part has meaning on its own
+Can be used together or separately
+Good for organizing related data
+
+
+3. Multi-valued Attribute
+A multi-valued attribute is when a single attribute can hold multiple values. It's like having multiple answers to the same question.
+Think of it like this:
+
+You know how some people have multiple phone numbers? Like one for work, one personal, and maybe one home number? That's a multi-valued attribute - one person can have several phone numbers, and they're all valid!
+File system
+(Note: In real relational databases, we'd typically create a separate table for phone numbers to handle this better)
+
+Multi-valued Attribute Representation in ERD:
+
+Multivalued attribute is represented by a double oval.
+File system
+Points to Remember:
+
+Not great for relational databases (we usually split them into separate tables)
+Can make searching and updating complicated
+Better handled through proper normalization
+Common in NoSQL databases
+Derived Attribute
+A derived attribute is something we can calculate from other attributes - we don't need to store it because we can figure it out when needed.
+Think of it like this:
+
+It's like your age - if we know your birth date, we don't need to store your age because we can calculate it anytime. The birth date is stored, but age is derived from it.
+File system
+Derived Attribute Representation in ERD:
+
+Derived attribute is represented by a dashed oval.
+
+Points to Remember:
+Not physically stored in the database
+Calculated when needed
+Saves storage space
+Needs to be clearly documented so everyone knows how it's calculated
+Can impact performance if the calculation is complex

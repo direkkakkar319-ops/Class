@@ -1,0 +1,24 @@
+Types of Entities
+
+1. Strong Entity
+A Strong Entity is an entity that can exist independently of other entities. It has attributes that can uniquely identify it (like a primary key).
+
+Think of it like this:
+
+A teacher in a school can exist independently - they have their own unique employee ID, regardless of what classes they teach or students they have.
+Example: In a School System
+Teachers (identified by TeacherID)
+Students (identified by StudentID)
+Departments (identified by DepartmentCode)
+
+
+2. Weak Entity
+A Weak Entity is an entity that cannot exist independently and must be associated with another strong entity. It typically does not have a unique identifier of its own and relies on a foreign key to identify it.
+
+Think of it like this:
+
+A room number in a building only makes sense when associated with that specific building - Room 101 could exist in multiple buildings, but "Room 101 in Building A" is unique.
+Example: In a School System
+Course Sections (depends on Course)
+Student Assignments (depends on Course and Student)
+Class Schedule Slots (depends on Room and Time Period)

@@ -1,0 +1,37 @@
+ER to Relational Mapping
+This is the "bridge" moment in DBMS.
+You've spent time drawing diagrams (ER), and now it's time to turn those drawings into actual Tables (Relational Schema).
+
+Think of the ER Diagram as the blueprint of a house and the Relational Mapping as the actual construction.
+
+What is ER to Relational Mapping?
+
+ER to Relational Mapping is the formal process of converting entities, attributes, and relationships into a set of tables (relations).
+In this stage, we move from conceptual bubbles and diamonds to rows and columns.
+
+The "Golden Rules" of Mapping
+To make this transition simple for students, we follow a set of standard rules:
+
+Entities become Tables: 
+Every strong entity type becomes a separate table.
+
+Attributes become Columns:
+The properties of the entity (Name, Age, ID) become the headers of the table.
+
+Primary Keys stay Primary:
+The unique identifier you chose in the ER diagram becomes the Primary Key (PK) of the table.
+
+Relationships become Foreign Keys:
+This is the most important part—how tables "talk" to each other is determined by where we place the Foreign Keys (FK).
+
+Why is this step so critical?
+Without proper mapping, a great design can fail in the implementation phase. Mapping ensures:
+
+Data Integrity: 
+Relationships are strictly enforced using keys.
+
+No Data Loss:
+Every piece of information in the diagram finds a home in a table.
+
+Structure for SQL:
+Once the mapping is done, writing the CREATE TABLE statements in SQL becomes a simple "copy-paste" job.

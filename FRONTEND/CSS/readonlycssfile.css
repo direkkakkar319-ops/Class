@@ -1,0 +1,239 @@
+/* universal  selector*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* id */
+#id {}
+
+/* class */
+.class {}
+
+/* element */
+element {}
+
+/* element with class */
+element.class {}
+
+/* element with id */
+element#id {}
+
+/* element with attribute */
+element[attribute] {}
+
+/* starts with */
+a[href^="https"]
+/*selects all the elements starting with "https"*/
+/* ends with */
+a[href$=".pdf"]
+/*selects all the elments ending with ".pdf" */
+/* contains */
+a[href="teri-bhen-di-jai-jai"]
+
+/* change color when cursor hovers on in */
+p:hover {
+    color: rgb(red, green, blue);
+}
+
+/* change color when we click on it */
+p:active {
+    color: rgb(red, green, blue);
+}
+
+/*  */
+p:focus {}
+
+/* changing color of the link */
+a:link {
+    color: #904390;
+}
+
+/* change color of lin when it is visited */
+a:visited {
+    color: pink;
+}
+
+/* selecting nth child from parent  */
+li:nth-child(2) {}
+
+/* selecting lst child from the parent */
+li:last-child {}
+
+/* selecting nth child from the last */
+li:nth-last-child(4) {}
+
+/* selecting first child from the parent */
+li:first-child {}
+
+/* combinators */
+
+
+
+
+
+/* fonts */
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* background properties */
+p {
+    background-color: red;
+    background-image: url("/cafe1.png");
+    /* background repeat */
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    /* background position */
+    background-position: left;
+    /* background attachment */
+    background-attachment: fixed;
+    background-attachment: local;
+    background-attachment: scroll;
+    /* background size */
+    background-size: cover;
+    /*fill the whole div*/
+    background-size: contain;
+    /**/
+    background-size: 100px 200px;
+    /*width and height of the attachment*/
+    /* background clip */
+    background-clip: border-box;
+    /*covring the div till the border*/
+    background-clip: padding-box;
+    /*covering the padding box*/
+    background-clip: content-box;
+    /*for the content or the area used in the dive by us*/
+    background-clip: text;
+    /*for text*/
+    /* background orogin */
+    background-origin: border-box;
+    /*tells us about where the the image will start*/
+    background-origin: padding-box;
+    background-origin: content-box;
+}
+
+div {
+    display: inline;
+    display: inline-block;
+    display: block;
+}
+
+div {
+    position: relative;
+    /*static w.r.to the whole wrapper class*/
+    position: static;
+    /*normal document flow don't works for top left or top right etc*/
+    position: sticky;
+    /*acts relative till the parent class dosen't end*/
+    position: absolute;
+    /*static w.r.t parent class*/
+    position: fixed;
+    /*don't move when you scroll*/
+}
+
+p {
+    visibility: hidden;
+    /*hides the container till the command to display it is not given*/
+    visibility: visible;
+    /*default*/
+}
+
+/* diffrent type of borders */
+table {
+    border: 2px solid black;
+    border: 2px dotted blue;
+    border: 2px double palegreen;
+    border: 2px groove powderblue;
+    border: 2px none peachpuff;
+    border: 2px ridge pink;
+    border: 3px inset lemonchiffon;
+}
+
+/* text properties */
+p {
+    color: #904390;
+    /* aligining the text in a div */
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: start;
+    text-align: end;
+    text-align: justify;
+    /* text case */
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    /* decoration of text */
+    text-decoration: underline;
+    /*underlining the text*/
+    text-decoration: overline;
+    /*line over the text*/
+    text-decoration: line-through;
+    /*cutting the text by on single line*/
+    text-decoration: dashed;
+    /*cahgin from dotte to normal*/
+    text-decoration: dotted;
+    /*dotted line under the text*/
+    text-decoration: double;
+    /*double under line for text*/
+}
+
+/* style of list */
+li {
+    list-style: disc;
+    list-style: circle;
+    list-style: square;
+}
+
+div {
+    flex-basis: auto 100px 20%;
+    /* display styles */
+    /* cant see background */
+    display: inline-flex;
+    /* can see background */
+    display: flex;
+    /* flex direction */
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: column;
+    /* flex wrapping */
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    /* combining flex direction and flex wrapping */
+    flex-flow: column-reverse wrap-reverse;
+}
+
+.lol {
+    /* justifying the content */
+    /* divs move to the start of the page */
+    justify-content: flex-start;
+    /* divs move towards the end of the page */
+    justify-content: flex-end;
+    /* divs have space aroud them but less space to the corner divs */
+    justify-content: space-around;
+    /* space between the divs but not to the corner divs */
+    justify-content: space-between;
+    /* divs shift towards the center of the web page */
+    justify-content: center;
+    /* space between the divs on the corner and between is same */
+    justify-content: space-evenly;
+    /* alignining the items */
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: baseline;
+    align-items: center;
+}
+
+.puy {
+    flex-grow: 1;
+    flex-shrink: -1;
+    /* it is relative to other div values */
+}

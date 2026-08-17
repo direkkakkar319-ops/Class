@@ -1,0 +1,564 @@
+<!DOCTYPE html> 
+<html lang="en"> <head><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Registration Form</title> </head> 
+<body> 
+    <h1>Student Registration Form</h1> 
+    
+    <form action="#" method="post"> 
+        
+        <!-- Text Input --> 
+        <label for="firstName">First Name:</label> 
+        <input type="text" id="firstName" name="firstName" placeholder="Enter 
+your first name"> 
+        <br><br> 
+        
+        <label for="lastName">Last Name:</label> 
+        <input type="text" id="lastName" name="lastName" placeholder="Enter 
+your last name"> 
+        <br><br> 
+        
+        <!-- Email Input --> 
+        <label for="email">Email Address:</label> 
+        <input type="email" id="email" name="email" placeholder="Enter your 
+email"> 
+        <br><br> 
+        
+        <!-- Password Input --> 
+        <label for="password">Password:</label> 
+        <input type="password" id="password" name="password" 
+placeholder="Create a password"> 
+        <br><br> 
+ 
+ 
+        
+        <!-- Number Input --> 
+        <label for="age">Age:</label> 
+        <input type="number" id="age" name="age" min="16" max="100" 
+placeholder="Enter your age"> 
+        <br><br> 
+        
+        <!-- Telephone Input --> 
+        <label for="phone">Phone Number:</label> 
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone 
+number"> 
+        <br><br> 
+        
+        <!-- Date Input --> 
+        <label for="birthdate">Date of Birth:</label> 
+        <input type="date" id="birthdate" name="birthdate"> 
+        <br><br> 
+        
+        <!-- Time Input --> 
+        <label for="preferredTime">Preferred Class Time:</label> 
+        <input type="time" id="preferredTime" name="preferredTime"> 
+        <br><br> 
+        
+        <!-- DateTime Local Input --> 
+        <label for="enrollmentDateTime">Enrollment Date & Time:</label> 
+        <input type="datetime-local" id="enrollmentDateTime" 
+name="enrollmentDateTime"> 
+        <br><br> 
+        
+        <!-- Dropdown/Select Box --> 
+        <label for="course">Select Course:</label> 
+        <select id="course" name="course"> 
+            <option value="">Choose a course</option> 
+            <option value="computer-science">Computer Science</option> 
+            <option value="mathematics">Mathematics</option> 
+            <option value="physics">Physics</option> 
+            <option value="chemistry">Chemistry</option> 
+            <option value="biology">Biology</option> 
+            <option value="english">English Literature</option> 
+            <option value="history">History</option> 
+        </select> 
+ 
+ 
+        <br><br> 
+        
+        <!-- Radio Buttons --> 
+        
+            <legend>Gender:</legend> 
+            <input type="radio" id="male" name="gender" value="male"> 
+            <label for="male">Male</label><br> 
+            
+            <input type="radio" id="female" name="gender" value="female"> 
+            <label for="female">Female</label><br> 
+            
+            <input type="radio" id="other" name="gender" value="other"> 
+            <label for="other">Other</label><br> 
+      
+        <br> 
+        
+        <!-- Checkboxes --> 
+        
+            <legend>Interests (Select all that apply):</legend> 
+            <input type="checkbox" id="sports" name="interests" value="sports"> 
+            <label for="sports">Sports</label><br> 
+            
+            <input type="checkbox" id="music" name="interests" value="music"> 
+            <label for="music">Music</label><br> 
+            
+            <input type="checkbox" id="arts" name="interests" value="arts"> 
+            <label for="arts">Arts</label><br> 
+            
+            <input type="checkbox" id="technology" name="interests" 
+value="technology"> 
+            <label for="technology">Technology</label><br> 
+            
+            <input type="checkbox" id="reading" name="interests" 
+value="reading"> 
+            <label for="reading">Reading</label><br> 
+        
+        <br> 
+        
+        <!-- Search Input --> 
+        <label for="searchSkills">Search for Skills:</label> 
+ 
+ 
+        <input type="search" id="searchSkills" name="searchSkills" 
+placeholder="Search for your skills"> 
+        <br><br> 
+        
+        <!-- Range Slider --> 
+        <label for="experience">Programming Experience (0-10 years):</label> 
+        <input type="range" id="experience" name="experience" min="0" max="10" 
+value="0"> 
+        <span>0 years</span> 
+        <br><br> 
+        
+        <!-- Color Picker --> 
+        <label for="favoriteColor">Favorite Color:</label> 
+        <input type="color" id="favoriteColor" name="favoriteColor" 
+value="#0066cc"> 
+        <br><br> 
+        
+        <!-- File Upload --> 
+        <label for="profilePhoto">Upload Profile Photo:</label> 
+        <input type="file" id="profilePhoto" name="profilePhoto" 
+accept="image/*"> 
+        <br><br> 
+        
+ 
+        <br><br> 
+        
+        <!-- Hidden Input 
+        <input type="hidden" id="formVersion" name="formVersion" value="1.0"> 
+        <input type="hidden" id="timestamp" name="timestamp" 
+value="2025-09-04"> 
+         --> 
+        <!-- Submit and Reset Buttons --> 
+        <input type="submit" value="Register Now"> 
+        <input type="reset" value="Clear Form"> 
+        
+    </form> 
+    
+    <br> 
+    
+</body> 
+</html> 
+ 
+ 
+ 
+note: (copy paste the code in vs code to see the output) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. Audio and video Tag 
+Audi tag is used for inserting Audio in website 
+ 
+<audio controls> 
+            <source src=""   type="audio/mp3"> 
+ </audio> 
+ 
+<video controls> 
+    <source src=""   type="video/mp4"> 
+ 
+<video> 
+ 
+ 
+3.Iframe tag   
+    Used to insert other website in your website 
+ 
+<iframe   src=” “  loading=” “>  <iframe 
+ 
+ 
+Code: 
+ 
+<!DOCTYPE html> 
+<html> 
+    <head> 
+ 
+    </head> 
+ 
+    <body> 
+ 
+        <audio controls> 
+ 
+ 
+            <source 
+src="https://commondatastorage.googleapis.com/codeskulptor-de
+ mos/DDR_assets/Sevish_-__nbsp_.mp3"  type="audio/mp3"> 
+        </audio> 
+ 
+        <video controls> 
+            <source 
+src="http://commondatastorage.googleapis.com/gtv-videos-bucke
+ t/sample/ElephantsDream.mp4" type="video/mp4"> 
+        </video> 
+ 
+ 
+ 
+       <iframe 
+src="https://www.youtube.com/embed/YIszsqhLGIs?si=iEwinM00waQ
+ fvZs6" title="YouTube video player"></iframe> 
+ 
+        <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38
+ 88.0458320079783!2d77.72018897358893!3d12.968919114940062!2m3
+ !1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6d829c7d
+ 1917%3A0xa4189b2d62dabf61!2sPolaris%20School%20of%20Technolog
+ y!5e0!3m2!1sen!2sin!4v1757047840234!5m2!1sen!2sin"></iframe> 
+    </body> 
+</html> 
+ 
+ 
+ 
+ 
+3.  Semantic tags 
+ 
+<header> → Defines page or section header 
+<nav> → Navigation links 
+<main> → Main content of the page 
+ 
+ 
+<section> → Thematic grouping of content 
+<article> → Independent, self-contained content 
+<aside> → Sidebar / related content 
+<footer> → Page or section footer 
+<figure> & <figcaption> → Images with captions 
+<mark> → Highlighted text 
+<time> → Date/time representation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+code: 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <title>TechBlog - Latest Technology News & 
+Reviews</title> 
+</head> 
+<body> 
+    <header> 
+        <h1>TechBlog</h1> 
+        <p>Your Source for Latest Technology News & 
+Reviews</p> 
+    </header> 
+ 
+    <nav> 
+        <ul> 
+            <li><a href="#home">Home</a></li> 
+            <li><a href="#reviews">Reviews</a></li> 
+ 
+ 
+            <li><a href="#news">News</a></li> 
+            <li><a href="#tutorials">Tutorials</a></li> 
+            <li><a href="#about">About</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+        </ul> 
+    </nav> 
+ 
+    <main> 
+        <section id="featured"> 
+            <h2>Featured Stories</h2> 
+            
+            <article> 
+                <h3>Apple Announces New MacBook Pro with M4 
+Chip</h3> 
+                <time datetime="2024-09-01">September 1, 
+2024</time> 
+                <p>Apple has unveiled its latest MacBook Pro 
+lineup featuring the revolutionary M4 chip. The new 
+processors promise <mark>30% faster performance</mark> 
+compared to the previous generation.</p> 
+                <p>The updated MacBooks include improved 
+battery life, enhanced graphics capabilities, and support for 
+up to 64GB of unified memory. Pricing starts at $1,999 for 
+the 14-inch model.</p> 
+            </article> 
+ 
+            <article> 
+                <h3>Google's AI Revolution: Gemini 2.0 
+Released</h3> 
+                <time datetime="2024-08-28">August 28, 
+2024</time> 
+ 
+ 
+                <p>Google has launched Gemini 2.0, its most 
+advanced artificial intelligence model yet. The new system 
+shows <mark>significant improvements in reasoning</mark> and 
+multimodal understanding.</p> 
+                <p>Early tests demonstrate enhanced 
+capabilities in code generation, scientific research, and 
+creative tasks. The model will be integrated into Google's 
+suite of products over the coming months.</p> 
+            </article> 
+        </section> 
+ 
+        <sec2tion id="reviews"> 
+            <h2>Latest Reviews</h2> 
+            
+            <article> 
+                <h3>iPhone 16 Pro Max Review: A 
+Photographer's Dream</h3> 
+                <time datetime="2024-08-25">August 25, 
+2024</time> 
+                <p>After two weeks of testing, the iPhone 16 
+Pro Max delivers exceptional camera performance. The new 
+<mark>48MP ultra-wide sensor</mark> captures stunning detail 
+in challenging lighting conditions.</p> 
+                <p>Battery life has improved significantly, 
+easily lasting a full day of heavy usage. The titanium build 
+feels premium while remaining surprisingly lightweight.</p> 
+                
+                
+                <figure> 
+                    <img 
+src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
+ AkGBw8REhUQDxIQFRIQDxAQEBAQDxAPEBAPFRIWFhYRFRUYHSkgGBolGxMTIT
+ 
+ 
+EhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0gHx8rKy0rLS0tLS0rLS0
+ rLS0tLS0tLS01Ky0tKy0tKy0tLSstKy0tLS0tKy0tLS0rLS0tLf/AABEIAOEA
+ 4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQIDBAYHAQj/xABLE
+ AACAQICBQULCQUFCQAAAAAAAQIDBAURBhIhMVETQXFzkSIyNUJhcoGxsrPBBx
+ QWJVJUk6HSFWKClOEjY5LT8BckQ1NVdKKjwv/EABoBAQADAQEBAAAAAAAAAAA
+ AAAABAgMEBQb/xAAiEQEBAAICAgICAwAAAAAAAAAAAQIRAzESIQQyQVETI9H/
+ 2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ AAAAAAAAAAAAAAAAAAAAAAAAAFmvWy2LbJ9iXFl4ir2rtqPyxgnwTUc/XIVbD
+ Hd0pub6Ee/qvflsahHPgnsz/MfOVxq9v9T5d0jxKte3FSpWlm9aapwlm404qW
+ UaUVujs7WmdF+RzGa/8AbWtWTlTo8lKnrNt09fXTgnw7hNLm7oiytcLjb46de
+ Vdc8qq6ZSy/Jl5edP8AxyI11Ulm5ZZblnv8mRkWtXY16Su2mXHPwg9MNK1ZKF
+ OnGrWua8tShbwnLXqT+CW9vmRD0PpJUWtO4sqGe1U1GtcSiuEpZqOfRsMfBkq
+ +M3lWe12ltb0aWfiqtrVJNeXZlnwNix25cIKMe+qvVXm879S9JO0Y8cya5TuN
+ IJSahf2rSeWt81nk+juixiWN4pbSULnGcOpTcdZQqUJKWrxy1s8tj7DbsLt0o
+ rYadpr8lX7QupXdO55J1IwjUhKk6q1oRUU4vWWSyitnHpIlOTjknqMf6X3n/X
+ sL/Bn+ov2OkGKXEnC2xfDqs1FycKdCTlqre8tbdtRBP5Cqn3+H8rL/ADCb0P8
+ Akp+YXMbqpdcq6UZ6kI0eSWtOLi3JuTzWTeziSzxxu/cSls9IJ7sQtE1vi7Se
+ a/8AIuznpLS7qFxYV8ntpzpVaDkuEZZuKfTsJO5TpzU48z2riudEpCSaTW5rN
+ dAlbXixWdCtMY32vRq05ULu3ercW0++g+KfjRe9PnW02o5din9hjeHVYLJ3dO
+ 5tqz4wpxVSHp2tdB1Es5c5q6AAFQAAAAAAAAAAAAAAAAhr7x+tj/8AJMkLfeP
+ 5+fYositeL7OXaT/J1Rq1pV6NSpRdSTnNRpxqwcm83JLWi4Nva9rWfAzsKw+0
+ wq3nUlKSpxaqVq0+6qVam6MUktr25KK4vi29urSnnHVy1c3rp78stjTNO+VfD
+ q1eyTopy5GvGtOEU3KVNQnFtJb8tZPLgmV7dNxmMuWM9sWx+VqznUUKlGrTg3
+ lyspQnqeWcY7l0ZnSbKaebTzTjsa4Hy1a0uV1adOLnWk1ClCml3S6Etr37W+x
+ H0hobbyp28KU3rOlQo0pS3pyhTjFtelNk5SRnx8mWUu2vaJeFcU83DvcyJbHJ
+ Z3FOP2YZ+lv+iIrRDwrinmYd7mRIY1LK7j1cfWyMmnD/AK2KyjsRIQRgWT2Ik
+ IEQzelucS9kUyROlJUNidHNFrBqmcHF74PL0P8A0yQvYbCFw6WpWceaaa9PN6
+ iI17iJ0n8K4R1t77hHUDmGlPhXCOtvfcI6eXjj5fsAAlmAAAAAAAAAAAAAAAA
+ EXVhm5+e/ZiShGp5ufWSXYkiK04+0dUs5c2XqLM7Go+BMHmRV0+Va3TwB6zfc
+ x1u+cYpSl0vn9JOULWNOGrHh2mQkeVNz6Ai1z3Q5fWuKeZh3uZGdpZKNOtTqy
+ eUeTacnzasv6owtDPCuKeZh3uZEX8ouIOtcxtY95QWc39qpLJtdCSXpbIyuov
+ 
+ 
+8AHxuWUkX6umNafcWkdVbuUms5PypbkV0J31TbOvU6FJpGPgtiklsNptKKRhu
+ 16t4sMJ1tgW9C6W6tU/xMk7e/u4d89dfvLb2mZTpovqki825M8sL+HlHEYVVk
+ 1qy+y+foZEYj3E4z4STJG5s09q38zMC8bnBqXfR3+VcS22PjPwjNKHnimENc9
+ S9f/oR085Ni9bO/waT5p3yf8NBHWTWODl+1AASzAAAAAAAAAAAAAAAACMp759
+ bP4EmRlJbZ5r/iz+G0itOPtWD3IZFW23hRV3MuFus9j6AOf6Er61xTzMO9zI1
+ ScuUuatR75VZy7ZM2vQnbimKeZh3uZmrwhq1Zr99+spydOr4V1la2jDY7ETlu
+ a7Y1ciatqxjHoZ3yiWpsuxZh06heUzSVxZ4L8mQ9/LVmnzSeq/SZ86pA43cbv
+ OXrFqccLpDYi/8Af8LX2bjEPztkdjOL3jbxHDv+4vklxfzY7Qb49PN5/vQAEs
+ QAAAAAAAAAAAAAAAAj130+sfsxJAj1vn1j9mJFXw7VAArpspnLJZmJcVc000Z
+ NZZowK72Mir4SNO0EX1pinmYb7mRE4nZuN1VjwqS7MyU0KrRhiOLTlujSw6T9
+ FGZkV6UqtXlJLbUWs+3L1ZEcnS/xrrKo2nTaMujcNEp8x2GLXsOBz16WGcX6F
+ 2jJVwiBnGUS271ojybeGNTde6XE1vErrWnGPGSKLrEGYOGZ1bqlB7pVIp9DZb
+ G7qnLJjjUtc0HG+weT31Li/n6OQSXq/M6+c20wgo4ng8Uskql6kuCVCKSOknX
+ Hz/Jd5WgAJZgAAAAAAAAAAAAAAABHrvp9Y/ZiSBHrvp9Y/ZiRV8O1QAKtgtVa
+ ccnsXYXSiruA5Vhc8sQxSC8d4XH+FUZv4I3WpbrVpy4PVfQ1/Q0bDPCuIdOH+
+ 4mdIjT1qbXPlmulbSMk43XtSqOwt1Lcy6LzSfkPZRM7i2mdiDurJPmIW7w426
+ rAj7ikZZYuzi5a0i6sWi9oja53tLyScuxZ/Al7+ki5oNbZ3Up/8unJ+l7Pixx
+ /aNPkZf12rumy+tMH62+9wjopzvTjwpg/W33uInRDteDkAAKgAAAAAAAAAAAA
+ AAABHrvp9Y/ZiSBH+NPrH7MSKvx9qgeAq2elFXcVFFTcExyvC4fWOJS+zPDOx
+ 0Kh0iwlsRoOAUta+xnjGnhs1/DTk/VmbvhFTOK6Be1Z1WRCOq3Hm3x6GXGXK1
+ LWWzvlufwZictlslsa3plavjdvahgXBlVayI67uEjHOuvixu0Tic8kyY0ApRU
+ akn38nF/wbcv9dBDUbSdzPJZqnF93Pm81eUmcGmqV1qLZGpBwS6FmvUTxT3tP
+ y854+ER+nXhTB+tvvcROhnPNOvCmD9dfe4idDOp5VAAFQAAAAAAAAAAAAAAAA
+ jvGn1j9mJIkd40+sfsxIrTj7egAq2CmpuKiipuCWi6CU1LFMXi90qeHxfQ6M0
+ TeCycc6ct8JOL6U8iH+T/wrivmYb7qZPYxS5K4VRd7W3+etj+DGTPDuxNU2K9
+ vCa7pdDWxr0li2qZoy4sntHuVF1cFz72rJdMUy1DR2nnnUnOfk7yP5bfzJrM8
+ ZXwx/TT+bPWtsV0owjqwSUVuSWSRrl7LUuKU1zVY9jZs9U1nEo61ejFc9aHtI
+ VGH5Y2nXhXB+uvvcROhnPNOvCuD9bfe4idDNHPQABAAAAAAAAAAAAAAAAARzf
+ dTXCp64RfxJEjb2OpNz8SaSk/sTWxSfkayWfNqriRV+O+1QPEwVdD0oqbio8k
+ BpGgSyxbFc+enhzXQqc0bxilkq1Nw3PfB8JrcznWO/OMNv1idGlOtRnS5C8oU
+ 0nUdLW1lVprnnF83Otmza1tVj8oGD1oqcb62in4tarGhNeRxqZMsxvqvMLuGs
+ 4T2Si9WSe9NE3CRrOLaQ4TN8rSxCwVRLavnlBKouD7rf5SzZab4dl3V5aLjnc
+ 
+ 
+0f1FelrrL229MNmurTPC/v9l/NUf1HktM8L+/WX81R/USqmrmeSIfBqPK3Tqe
+ LQT28zqSWSXZm+wib3TGwqPk6d7ZrW3zldUYwiuLesSNPTLBLOjl8/tZKOcpc
+ lVjWqTlzvVp5siTdWtkmmBpw88WwaPO6l8/RyMV8TohzbRWlcYniH7WrUp0bW
+ hSdCxpVVlUkm85Vprmbf5JLyvpJdjQABAAAAAAAAAAAAAAAAAAAMR4dS5oteS
+ E5012RaQ/Z1P8AvPxq36jLAT5Vifs+n/efjVv1D9n0/wB/8ar+oywNHlf2wKu
+ EUJLKSm111b9RHV9CcLqPWq2lGpL7VVOrLtm2bAAbrWvoBg33C0/BiPoBg33C
+ 0/BibKAjbWvoBg33C0/BiPoBg33C0/BibKANa/2f4N9wtPwYmRZaG4XRlr0bO
+ 2hL7UKUUydANvIxSWSSSW5LYkegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k
+ =" alt="iPhone 16 Pro Max product photo" width="400" 
+height="300"> 
+                    <figcaption>The new iPhone 16 Pro Max 
+featuring titanium build and advanced camera 
+system</figcaption> 
+                </figure> 
+ 
+ 
+            </article> 
+ 
+            <article> 
+                <h3>Tesla Model Y Refresh: What's New in 
+2024</h3> 
+                <time datetime="2024-08-20">August 20, 
+2024</time> 
+                <p>Tesla's updated Model Y brings subtle but 
+meaningful improvements. The refreshed interior features 
+<mark>premium materials</mark> and enhanced build quality 
+throughout.</p> 
+                <p>Range has increased to 330 miles on a 
+single charge, while the new heat pump system improves 
+efficiency in cold weather conditions.</p> 
+            </article> 
+ 
+ 
+        </section> 
+ 
+        <aside> 
+            <h3>Trending Topics</h3> 
+            <ul> 
+                <li>Artificial Intelligence</li> 
+                <li>Electric Vehicles</li> 
+                <li>Smartphone Reviews</li> 
+                <li>Gaming Hardware</li> 
+                <li>Software Updates</li> 
+            </ul> 
+            
+            <h3>Newsletter</h3> 
+            <p>Get the latest tech news delivered to your 
+inbox every <time datetime="07:00">morning at 7 
+AM</time>.</p> 
+            
+            <h3>Popular This Week</h3> 
+            <ol> 
+                <li>Best Gaming Laptops Under $1000</li> 
+                <li>iOS 18 Hidden Features</li> 
+                <li>Android vs iPhone Camera Test</li> 
+            </ol> 
+        </aside> 
+ 
+        <section id="news"> 
+            <h2>Breaking News</h2> 
+            
+            <article> 
+                <h3>Microsoft Acquires AI Startup for $2.1 
+Billion</h3> 
+ 
+ 
+                <time 
+datetime="2024-09-04T14:30:00">September 4, 2024 at 2:30 
+PM</time> 
+                <p>Microsoft announced the acquisition of 
+CloudMind AI, a startup specializing in enterprise artificial 
+intelligence solutions. The deal values the company at 
+<mark>$2.1 billion</mark>.</p> 
+                <p>CloudMind's technology will be integrated 
+into Microsoft's Azure cloud platform, enhancing AI 
+capabilities for business customers worldwide.</p> 
+            </article> 
+ 
+            <article> 
+                <h3>Samsung Delays Foldable Phone Launch Due 
+to Screen Issues</h3> 
+                <time datetime="2024-09-03">September 3, 
+2024</time> 
+                <p>Samsung has postponed the launch of its 
+next-generation foldable smartphone after discovering 
+<mark>durability concerns</mark> with the new ultra-thin 
+glass display.</p> 
+                <p>The company expects to resolve the issues 
+and launch the device in early 2025 instead of the originally 
+planned holiday season release.</p> 
+            </article> 
+        </section> 
+ 
+        <section id="tutorials"> 
+            <h2>How-To Guides</h2> 
+            
+            <article> 
+ 
+ 
+                <h3>Setting Up Your Smart Home: A Beginner's 
+Guide</h3> 
+                <time datetime="2024-08-30">August 30, 
+2024</time> 
+                <p>Transform your home into a smart home with 
+our comprehensive guide. We'll walk you through selecting 
+devices, setting up automation, and <mark>maximizing energy 
+efficiency</mark>.</p> 
+                <p>Start with basic devices like smart bulbs 
+and thermostats before expanding to more advanced systems 
+like security cameras and door locks.</p> 
+            </article> 
+ 
+            <article> 
+                <h3>Optimizing Your Laptop for Gaming 
+Performance</h3> 
+                <time datetime="2024-08-27">August 27, 
+2024</time> 
+                <p>Boost your gaming laptop's performance 
+with these proven optimization techniques. Learn how to 
+adjust graphics settings, manage system resources, and 
+<mark>increase frame rates</mark>.</p> 
+                <p>Regular maintenance and proper cooling are 
+essential for sustained gaming performance and hardware 
+longevity.</p> 
+            </article> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2024 TechBlog. All rights reserved.</p> 
+ 
+ 
+        <p>Published daily since <time 
+datetime="2020">2020</time></p> 
+        <p>Contact us: editor@techblog.com | Phone: (555) 
+123-4567</p> 
+        
+        <nav> 
+            <h3>Quick Links</h3> 
+            <ul> 
+                <li><a href="#privacy">Privacy 
+Policy</a></li> 
+                <li><a href="#terms">Terms of 
+Service</a></li> 
+                <li><a href="#advertise">Advertise With 
+Us</a></li> 
+                <li><a href="#careers">Careers</a></li> 
+            </ul> 
+        </nav> 
+    </footer> 
+</body> 
+</html> 
+ 
+ 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Containers Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Outer big box */
+    .outer {
+      border: 3px solid black;
+      padding: 10px;
+      width: 80%;
+      position: relative;
+    }
+
+    .container {
+      border: 2px solid black;
+      margin: 10px 0;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* First container (POLARIS) */
+    .top {
+      text-align: center;
+      font-weight: bold;
+      background: yellow;
+      color: black;
+    }
+
+    /* Second container */
+    .middle {
+      min-height: 150px;
+    }
+
+    /* Third container */
+    .bottom {
+      min-height: 120px;
+      max-height: 200px;
+      overflow-y: auto;
+      position: relative; /* Important for fixed ASK button inside */
+    }
+
+    /* ASK Button fixed inside scrollable container */
+    .ask-btn {
+      position: sticky;
+      top: 10px;   /* 10px from top */
+      right: 0;    /* flush with right border */
+      background: red;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px 0 0 8px;
+      font-weight: bold;
+      cursor: pointer;
+      float: right;
+      margin-right: -2px; /* align with border */
+    }
+    mark{
+      color: red;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    
+    <!-- First container -->
+    <div class="container top">
+      POLARIS
+    </div>
+
+    <!-- Second container -->
+    <div class="container middle">
+      <h3><b>BEYOND the classroom</b></h3>
+      <p style="color:red;">Add content here</p>
+    </div>
+
+    <!-- Third container -->
+    <div class="container bottom">
+      <p style="color:red;">5 random questions here</p>
+      <p>Question 1</p>
+      <p>Question 2</p>
+      <p>Question 3</p>
+      <p>Question 4</p>
+      <p>Question 5</p>
+      <p>Question 6</p>
+      <p>Question 7</p>
+      <p>Question 8</p>
+
+      <!-- Fourth container (ASK button fixed inside scroll area) -->
+      <div class="ask-btn">ASK</div>
+    </div>
+
+  </div>
+<mark>yellow</mark>
+</body>
+</html>

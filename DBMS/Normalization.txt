@@ -1,0 +1,29 @@
+What is Normalisation
+Database normalization is a step-by-step process of organizing your data to reduce redundancy and improve data integrity.
+Think of it as creating a set of rules for your database that helps prevent data inconsistencies and makes updates easier.
+
+Think of it like this:
+Imagine your messy closet where you throw everything in one drawer.
+Finding things is hard, and you often have duplicate items! 
+Normalization is like organizing that closet into separate drawers for socks, shirts, and pants - everything has its perfect place! 👕
+
+But it goes even further - it's like also creating a catalog system that helps you know:
+Which clothes belong to which season
+How different pieces can be matched together
+When you last wore each item
+Let's say you're managing a school system
+File system
+see the repeated data?
+
+Normalization is a step-by-step process. 
+There are different normal forms, we'll cover 1NF, 2NF, and 3NF, BCNF, 4NF and 5NF.
+Each step builds on the previous one which means that every normal form has already passed the rules of the previous form.
+
+Pro Tips 💡
+Ask yourself: 
+"Does this data really belong here?" 
+If not, it probably needs its own table.
+
+Remember:
+Normalization might mean more tables, but it means less redundant data!
+Sometimes denormalization is okay for performance - but normalize first, then denormalize if needed!s

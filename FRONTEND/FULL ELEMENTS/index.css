@@ -1,0 +1,158 @@
+/* Button hover */
+#helloworld:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* change when button is clicked */
+#helloworld:active {
+  background-color: red;
+}
+
+/* Anchor states */
+#anchor:link,
+#anchor:visited {
+  color: red;
+  text-decoration: none;
+}
+
+#anchor:hover {
+  color: green;
+}
+
+/* Input focus */
+#inputtag:focus {
+  color: purple;
+  border: 2px solid red;
+  outline: none;
+}
+
+.list-tag-ol {
+  background-color: red;
+}
+
+.list-tag-ul {
+  background-color: pink;
+}
+
+.list-tag-dl {
+  background-color: yellow;
+}
+
+/* submit button */
+#submit-form:hover {
+  background-color: yellow;
+}
+
+#submit-form:active {
+  background-color: red;
+}
+
+body {
+  background-color: aqua;
+}
+
+#box1 {
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  background-color: black;
+}
+
+#box1 {
+  transition: background-color 5s;
+}
+
+#box1:hover {
+  background-color: red;
+}
+
+#box1 {
+  /* transition-property: transform;
+  transition-duration: 5s;
+  transition-timing-function:ease-out;
+  transition-delay: 2s; */
+
+  /* trasition shorthand property */
+  transition: transform 5s ease-out 2s;
+  
+  /* transition: <property> <duration> <timing-function> <delay>; */
+
+  /* diffent types of transiton-timing-function */
+  /* 1. linear: same speed form start, no acc no decc.*/
+  /* 2. ease: slow start->fast->slow.*/
+  /* 3. ease-in: slow at start, speeds up towards the end.*/
+  /* 4. ease-in-out: fast at start, slows down at the end.*/
+  /* 5. ease-out: slow  at start->fast at middle->slow at end,smoothest and most balanced*/
+}
+
+@media(min-width: 700px) {
+  body {
+    background-color: grey;
+  }
+
+  #box1 {
+    /* transform: translate(100px, 50px); */
+    /* 100px right and 50px down */
+
+    /* transform: scale(1.5); */
+    /* increase size of box by 1.5 times */
+
+    /* transform: scaleX(1.5); 
+    indirection of x means width*/
+
+    /* transform: scaleY(1.5); 
+    in direction of y means height*/
+
+    /* transform: rotate(45deg); */
+
+    /* transform: rotateX(45deg); 
+    indirection of x means width*/
+
+    /* transform: rotateY(45deg);
+    in direction of y means height */
+
+    /* transform: rotateZ(45deg); 
+    in direction of z*/
+
+    /* transform shorthand property */
+    transform: rotate(45deg) scale(1.5) translate(100px, 50px);
+
+    transform: skew(20deg, 10deg);
+    /* 20degree in direction of x-axis
+    10degree in direction of y-axis */
+
+  }
+}
+
+#box1 {
+  /* animation: moveBox; */
+  /* animation-duration: 2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation shorthand */
+  animation: moveBox 2s linear infinite;
+
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+    transform: rotate(45deg) scale(1.5) translate(100px, 50px);
+    transform: skew(20deg, 10deg);
+  }
+}
+/* short hand properties */
+/*
+animation: name duration timing-function delay iteration-count;
+transform: rotate() scale() translate();
+transition: transform 5s ease 2s;
+*/

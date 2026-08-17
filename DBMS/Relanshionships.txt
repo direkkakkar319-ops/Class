@@ -1,0 +1,37 @@
+Relationships - Types
+Since we've already learned relationship and their types we'll keep this short
+
+Relationship
+A relationship is a connection or association between specific entities.
+
+Relationship type is represented by a diamond and connecting the entities with lines.
+File system
+Relationship set
+A relationship set is a collection of similar relationships between entities of the same type 🗂️
+
+File system
+Types of relationships
+One-to-One Relationship (1:1)
+Each record in the first table matches exactly one record in the second table, and vice versa 🎯
+Think of it like this:
+
+Like a person and their passport - each person has exactly one passport, and each passport belongs to exactly one person! 🛂
+File system
+One-to-One Representation in ERD
+File system
+One-to-Many Relationship (1:N)
+One record in the first table can relate to multiple records in the second table, but each record in the second table relates to only one record in the first table 📚
+Think of it like this:
+
+Like a teacher and their students - one teacher can have many students, but each student has only one teacher (in this example)! 👩‍🏫
+File system
+One-to-Many Representation in ERD
+File system
+Many-to-Many Relationship (M:N)
+Multiple records in the first table can relate to multiple records in the second table 🔄
+Think of it like this:
+
+Like students and courses - a student can take multiple courses, and each course can have multiple students! 📚
+File system
+Many-to-Many Representation in ERD
+File system
