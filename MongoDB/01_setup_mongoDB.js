@@ -62,7 +62,8 @@ db.orders.insertMany([
         total: 3298,
         status: "Delivered",
         createdAt: new Date()
-    }, {
+    },
+    {
         orderId: "ORD002",
         user: "Jane Smith",
         products: [
